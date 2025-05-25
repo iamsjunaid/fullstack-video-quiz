@@ -1,5 +1,7 @@
 # AI-Powered Lecture Transcriber & MCQ Generator
 
+![Screenshot 2025-05-25 185045](https://github.com/user-attachments/assets/a03f9afe-4b8e-4284-805d-eb9d27913394)
+
 A full-stack MERN application that enables users to upload lecture videos (MP4), transcribe them using Whisper, and generate Multiple Choice Questions (MCQs) for each 5-minute segment using AI.
 
 ## Features
@@ -39,6 +41,9 @@ root/
 3. Docker (optional, for containerized deployment)
 4. MongoDB Atlas account
 5. Ollama (v0.7.1 or higher)
+
+### Demo
+🚀[Youtube Video Demo](https://www.youtube.com/watch?v=sGHl61YZyZ8)
 
 ### Installation
 
