@@ -12,6 +12,9 @@ A full-stack MERN application that enables users to upload lecture videos (MP4),
 - 📊 Clean, segment-wise UI display
 - 💾 MongoDB Atlas for storing video metadata and results
 
+### Video Demo
+🚀[Youtube Video Demo](https://www.youtube.com/watch?v=sGHl61YZyZ8)
+
 ## Tech Stack
 
 - **Frontend**: React.js, TypeScript, Tailwind CSS, React Query
@@ -41,9 +44,6 @@ root/
 3. Docker (optional, for containerized deployment)
 4. MongoDB Atlas account
 5. Ollama (v0.7.1 or higher)
-
-### Demo
-🚀[Youtube Video Demo](https://www.youtube.com/watch?v=sGHl61YZyZ8)
 
 ### Installation
 
