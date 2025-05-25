@@ -1,5 +1,3 @@
-I'll update the README.md to include instructions for setting up the AI service with Gemma:2b using Ollama, keeping all other content unchanged.
-
 # AI-Powered Lecture Transcriber & MCQ Generator
 
 A full-stack MERN application that enables users to upload lecture videos (MP4), transcribe them using Whisper, and generate Multiple Choice Questions (MCQs) for each 5-minute segment using AI.
@@ -47,7 +45,7 @@ root/
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/lecture-ai-transcriber.git
+   git clone https://github.com/iamsjunaid/lecture-ai-transcriber.git
    cd lecture-ai-transcriber
    ```
 
@@ -57,7 +55,6 @@ root/
    ```
    MONGODB_URI=<your_mongodb_atlas_connection_string>
    PORT=5000
-   OPENAI_API_KEY=<your_api_key_if_applicable>
    ```
 
    Ensure the server reads the `.env` file using:
@@ -122,11 +119,15 @@ This starts:
    pip install -r requirements.txt
    python app.py
    ```
+   If you want to test it locally without Docker
+   ```bash
+   cd ai-service
+   uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+   ```
 
 ## API Endpoints
 
 - `POST /api/upload`: Uploads a video and processes transcription + MCQ generation
-- `GET /api/videos`: Retrieves a list of uploaded videos with metadata
 
 ## To-Do
 
