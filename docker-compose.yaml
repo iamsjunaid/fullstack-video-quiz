@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  server:
+    build: ./server
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+    depends_on:
+      - ai-service
+    env_file:
+      - .env
+
+  ai-service:
+    build: ./ai-service
+    ports:
+      - "8000:8000"
+
+  client:
+    build: ./client
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:5000
